@@ -11,7 +11,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.aiden.android'
-                artifactId = 'common-adapter'
+                artifactId = 'widget'
                 version = 'v1.0'
             }
         }
