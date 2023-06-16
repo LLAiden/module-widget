@@ -52,7 +52,7 @@ class RoundImageView @JvmOverloads constructor(context: Context, attrs: Attribut
         srcPath = Path()
     }
 
-    fun getAnglePath(rectF: RectF, radius: Float): Path {
+    private fun getAnglePath(rectF: RectF, radius: Float): Path {
         val path = Path()
         val floatArray = FloatArray(8) { radius }
         path.addRoundRect(rectF, floatArray, Path.Direction.CCW)
